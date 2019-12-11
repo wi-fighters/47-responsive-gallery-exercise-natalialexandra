@@ -41,9 +41,9 @@ h1 {
 /* Gallery */
 
 ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 
@@ -58,7 +58,7 @@ img {
 When there's room for more than 1 column of 400px-wide images,
 change the layout of the gallery to show 2 columns
 */
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
 
   ul {
     display: flex;
@@ -68,17 +68,17 @@ change the layout of the gallery to show 2 columns
   li {
     width: calc(100% / 2);
   }
-}
+} */
 
 /*
 When there's room for more than 2 columns,
 change the layout of the gallery to show 3 columns
 */
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   li {
     width: calc(100% / 3);
   }
-}
+} */
 
 /*
 When there's room for more than 3 columns,
@@ -86,8 +86,8 @@ change the layout of the gallery to show 4 columns
 */
 
 /* ??? Write your own. You got this :) */
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   li {
     width: calc(100% / 4);
   }
-}
+} */
